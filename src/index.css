@@ -1,13 +1,96 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+}
+#wrapper {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+#sky {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 50vh;
+  background: #246e89
+    url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/641/bg_sky.jpg") repeat-x
+    center;
+  background-size: contain;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#earth {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50vh;
+  background: #eb125d
+    url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/641/bg_earth.jpg")
+    repeat-x top;
+  background-size: contain;
+}
+
+.far {
+  position: absolute;
+  z-index: 2;
+}
+.ontop {
+  position: absolute;
+  z-index: 3;
+}
+
+.between {
+  position: absolute;
+  z-index: 4;
+}
+#alice_queen_wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 450px;
+  height: auto;
+  top: -50px;
+  left: 30%;
+  z-index: 4;
+}
+#tree {
+  left: 0;
+  bottom: -150px;
+  z-index: 4;
+}
+#tree2 {
+  right: 0;
+  bottom: -50px;
+  z-index: 4;
+}
+#bush {
+  right: 0;
+  bottom: -50px;
+  z-index: 4;
+}
+#rook {
+  left: 10%;
+  bottom: 0;
+}
+#small_rook {
+  left: 60%;
+  bottom: 0;
+}
+
+#small_pawn {
+  top: 0;
+  left: 0;
+}
+#small_upright_pawn {
+  top: -20px;
+  left: 40%;
+}
+#small_knight {
+  right: 0;
+  top: -50px;
+}
+
+#palm1_small {
+  left: 5%;
+  top: 0;
 }
